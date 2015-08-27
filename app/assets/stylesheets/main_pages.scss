@@ -1,0 +1,44 @@
+// Place all the styles related to the main_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// MENU STYLES
+
+.menu {
+  border-color: white !important;
+  border-style: solid !important;
+  border: 4px solid white;
+  h1 {
+    background-color: black !important;
+    color: white !important;
+  }
+}
+
+.menuitem {
+  display: block;
+  font: 1.5em 'Pacifico', Helvetica, sans-serif;
+  color: white !important;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+  .odd {
+    background-color: pink;
+    float: left;
+    .menuname {
+      color: black;
+      font-size: 1.7em;
+    }
+    .menudesc {
+      color: white;
+    }
+  }
+  .even {
+    background-color: black;
+    float: right;
+    .menuname {
+      color: white;
+      font-size: 1.7em;
+    }
+    .menudesc {
+      color: pink;
+    }
+  }
+}

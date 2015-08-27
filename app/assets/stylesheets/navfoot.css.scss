@@ -1,0 +1,110 @@
+// NAVBAR
+
+#nav-id {
+  font-size: 20px;
+  width: auto;
+  .navbar-nav > {
+    li > a {
+      color: white;
+      background-color: rgba(248, 248, 248, 0);
+      &:hover, &:focus {
+        -webkit-animation: glow .7s infinite alternate;
+        @-webkit-keyframes glow {
+          to {
+            color: red;
+            text-shadow: 0 0 10px black;
+          }
+        }
+      }
+    }
+    .active > a {
+      background-color: rgba(70, 219, 83, 1);
+      &:hover, &:focus {
+        color: rgba(85, 85, 85, 1);
+        background-color: rgba(70, 219, 83, 1);
+      }
+    }
+  }
+  .navbar-toggle {
+    border-color: black;
+    &:hover, &:focus, .icon-bar {
+      background-color: gray;
+    }
+    &:hover .icon-bar, &:focus .icon-bar {
+      background-color: #aaa;
+    }
+  }
+  .navbutton {
+    text-align: center;
+    .leftnav {
+      li {
+        width: 120px;
+      }
+    }
+    .rightnav {
+      li {
+        width: 120px;
+      }
+    }
+  }
+
+  .navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    margin-top: -16px;
+    img {
+      display: inline-block !important;
+    }
+  }
+}
+
+.navbar {
+  padding-bottom: 150px;
+  .navbar-header {
+     text-align: center;
+  }
+}
+
+// Override box-shadow collapse menu
+
+.navbar-collapse {
+  box-shadow: inset 0 0px 0 !important;
+}
+// MEDIA QUERIES
+
+@media screen and (min-width: 992px) {
+  .navbutton {
+    .leftnav {
+      padding-left: 10% !important;
+    }
+    .rightnav {
+      padding-right: 10% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+// FOOTER
+
+.footer {
+  padding-top: 25px;
+}
+
+.footitem {
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+}
+.socialmeds {
+  padding-top: 15px;
+  padding-left: 0px !important;
+  .fa {
+    color: white;
+  }
+}
+

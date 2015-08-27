@@ -1,0 +1,27 @@
+<div class="container menu">
+  <h1>Menu</h1>
+  <% @categories.each do |category| %>
+    <div class="<%= cycle("odd", "even") %> col-sm-12 menuitem">
+      <% if !category.products.any? do %>
+        <h2 class="title"><%= category.title %></h2>
+        <div class="col-xs-12 submenu">
+          <% category.products.each do |product| %>
+            <div class="col-sm-6 submenu">
+              <div class="menuname">
+                <%= product.title %>
+              </div>
+            
+              <div class="menudesc">
+                <%= product.description %><br>
+              </div>
+              <div class="menuprice">
+                <%= product.price %><br>
+              </div>
+            </div>
+          <% end %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
