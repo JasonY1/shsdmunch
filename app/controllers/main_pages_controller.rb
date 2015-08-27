@@ -2,6 +2,7 @@ class MainPagesController < ApplicationController
   def home
     @categories = Category.all
     @products = Product.all
+    @flyer = Flyer.find_by(position: 1)
   end
 
   def menu
