@@ -11,6 +11,11 @@ test:
 
 production:
   adapter: postgresql
+  username: soho_production
   database: soho_production
+  host: localhost
   pool: 5
   timeout: 5000
+
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails sohosd: development" uuid="6c8a60b4-7968-4653-9432-9f7f66971f43">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails sohosd: test" uuid="ef412718-5f37-4985-b3c6-d2f72ff5e156">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails sohosd: production" uuid="b171a79d-0674-4466-a822-6da77aea4aaf">
+      <first-sync>true</first-sync>
+      <user-name>soho_production</user-name>
+    </data-source>
+  </component>
+</project>
